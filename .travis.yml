@@ -1,10 +1,11 @@
 
 language: generic
 
+before-install:
+  - wget -q -O libstdc++6 http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb
+  - sudo dpkg --force-all -i libstdc++6
+
 install:
-  - wget -q http://security.ubuntu.com/ubuntu/pool/main/g/gcc-5/libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb
-  - sudo dpkg -i libstdc++6_5.4.0-6ubuntu1~16.04.10_amd64.deb
-  - sudo apt-get -f install
   - wget -q https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_extended_0.54.0_Linux-64bit.deb
   - echo "b09c0cbd7fd6ac432f94e9547d8a0e1714fcc7078cf8736c7cd7f35a3ceb9a17  hugo_extended_0.54.0_Linux-64bit.deb" | sha256sum -c - || exit 1;
   - sudo dpkg -i hugo_extended_0.54.0_Linux-64bit.deb

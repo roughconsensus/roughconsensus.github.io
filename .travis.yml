@@ -1,1 +1,28 @@
 
+language: generic
+
+install:
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_extended_0.54.0_Linux-64bit.deb
+  - echo "b09c0cbd7fd6ac432f94e9547d8a0e1714fcc7078cf8736c7cd7f35a3ceb9a17  hugo_extended_0.54.0_Linux-64bit.deb" | sha256sum -c - || exit 1;
+  - sudo dpkg -i hugo_extended_0.54.0_Linux-64bit.deb
+# Clean and don't fail
+  - rm -rf public || exit 0
+  - hugo env
+
+# Build the website
+script:
+  - hugo
+#  - echo roughconsensus.nl > public/CNAME
+  - echo '[![build status](https://travis-ci.org/roughconsensus/roughconsensus.github.io.svg?branch=hugo-src)](https://travis-ci.org/roughconsensus/roughconsensus.github.io)' > public/README.md
+  - echo '# [roughconsensus.nl](https://roughconsensus.nl)' >> public/README.md
+  - echo 'Static files for my website built with [Hugo](https://gohugo.io)' >> public/README.md
+
+# Deploy to GitHub pages
+deploy:
+  provider: pages
+  target_branch: master
+  skip_cleanup: true
+  local_dir: public
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: hugo-src

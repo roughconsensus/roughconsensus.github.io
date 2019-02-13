@@ -1,0 +1,28 @@
+baseURL = "https://roughconsensus.nl/"
+languageCode = "en-us"
+title = "Rough Consensus"
+theme = "hugo-now-ui"
+
+[permalinks]
+post = "/:year/:month/:day/:slug/"
+
+[[menu.footer]]
+    identifier = "twitter"
+    name = "twoxey"
+    pre = "<i class='fa fa-twitter'></i>"
+    url = "https://twitter.com/twoxey"
+    weight = 1
+[[menu.footer]]
+    identifier = "copyright"
+    name = "CC BY-NC-ND 4.0"
+    pre = "<i class='fa fa-balance-scale'></i>"
+    url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+    weight = 2
+
+[params]
+    background = "/img/rotterdam.jpg"
+    tint = "green"
+    custom_css = []
+    custom_js = []
+    date_format = "Mon 2 Jan 2006"
+    description = "Accelerate your digital transformation."

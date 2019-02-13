@@ -1,4 +1,4 @@
-baseURL = "https://roughconsensus.nl/"
+baseURL = "https://roughconsensus.github.io/"
 languageCode = "en-us"
 title = "Rough Consensus"
 theme = "hugo-now-ui"

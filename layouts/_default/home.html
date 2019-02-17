@@ -1,0 +1,35 @@
+{{ define "title" }}
+<div class="container">
+  <div class="content-center">
+    <h1>{{if .Param "logo" }} <img src="{{ .Param "logo" | absURL }}" itemprop="image" height=60 width=60> {{ end }} <span class="site-title">{{ .Title }}</span></h1>
+    <div class="text-center">
+      {{with .Params.description }} {{ . | safeHTML }} {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+{{ define "body" }}
+              
+<!-- Optional Header Image -->
+{{ if .Params.header.image }}
+<div class="article-header">
+  <img src="{{ .Params.header.image | absURL }}" class="article-banner" itemprop="image">
+  {{ with .Params.header.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
+</div>
+{{end}}
+
+   <!-- Homepages can get Content and yaml metadata from an _index.md -->
+   {{ with .Content }}<div class="article-style" itemprop="articleBody">
+    <div class="row">
+      <div class="col-md-8 ml-auto mr-auto text-left">
+        {{ . }}
+      </div>   
+    </div>
+  </div>{{ end }}
+
+{{end}}
+
+
+
+

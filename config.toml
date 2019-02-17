@@ -6,6 +6,32 @@ theme = "hugo-now-ui"
 [permalinks]
 post = "/:year/:month/:day/:slug/"
 
+[[menu.main]]
+    name = "What I do"
+    url = "/#what-i-do"
+    pre = "<i class='now-ui-icons business_bulb-63'></i>"
+    weight = 1
+[[menu.main]]
+    name = "How I work"
+    url = "/#how-i-work"
+    pre = "<i class='now-ui-icons ui-2_settings-90'></i>"
+    weight = 2
+[[menu.main]]
+    name = "About me"
+    url = "/#about-me"
+    pre = "<i class='now-ui-icons users_single-02'></i>"
+    weight = 3
+[[menu.main]]
+    name = "About"
+    url = "/#about"
+    pre = "<i class='now-ui-icons travel_info'></i>"
+    weight = 3
+[[menu.main]]
+    name = "Can I help you?"
+    url = "/#can-i-help-you"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    weight = 4
+
 [[menu.footer]]
     identifier = "twitter"
     name = "twoxey"
@@ -21,8 +47,9 @@ post = "/:year/:month/:day/:slug/"
 
 [params]
     background = "/img/rotterdam.jpg"
+    logo = "/img/logo.png"
     tint = "green"
-    custom_css = []
-    custom_js = []
+    custom_css = ['/css/custom.css']
+    custom_js = ['custom.js']
     date_format = "Mon 2 Jan 2006"
     description = "Accelerate your digital transformation."

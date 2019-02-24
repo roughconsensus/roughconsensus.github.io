@@ -1,3 +1,5 @@
+a, a:hover { color: #42a0a0; }
+
 :target::before {
   content: "";
   display: block;

@@ -16,7 +16,7 @@ install:
 # Build the website
 script:
   - hugo
-#  - echo roughconsensus.nl > public/CNAME
+  - echo roughconsensus.nl > public/CNAME
   - echo '[![build status](https://travis-ci.org/roughconsensus/roughconsensus.github.io.svg?branch=hugo-src)](https://travis-ci.org/roughconsensus/roughconsensus.github.io)' > public/README.md
   - echo '# [roughconsensus.nl](https://roughconsensus.nl)' >> public/README.md
   - echo 'Static files for my website built with [Hugo](https://gohugo.io)' >> public/README.md

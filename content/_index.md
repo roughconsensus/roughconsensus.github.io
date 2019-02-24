@@ -26,13 +26,13 @@ description:  "Accelerate your digital transformation"
             <div class="image-container image-right" style="background-image: url('/img/office-1.jpg')"></div>
             <h3 id="how-i-work">How I work</h3>
             <p>
-                The digital transformation is accelerating the pace of change in an ever growing range of businesses. This poses enormous opportunities to grow your business by lowering your costs by an order of magnitude or by opening up markets that were inaccessible using more traditional go-to-market approaches. However, when you can't keep up with change, it can also become a challenge or an outright threat to your survival. At present, transformation towards a digital native business is not optional anymore, but a necessity.
+                The digital transformation is accelerating the pace of change in an ever growing range of businesses. This poses enormous opportunities to grow your business. Going digital native can lower your costs by an order of magnitude or open up markets that were out of reach using more traditional go-to-market approaches. However, when you can't keep up with change, it can also become a challenge or an outright threat to your survival. At present, transformation towards a digital native business is not optional anymore, but a necessity.
             </p>
             <p>
                 A successful transformation does not solely depend on the selection and implementation of the right technology. Much more important is the adaptation of your business processes and the shift in mindset of your staff.
             </p>
             <p>
-                My approach addresses each of these three aspects: people, processes and technology. I focus on improving your way of working by making the feedback loop for innovation as short as possible. Your organisations transformation accelerates only when your people learn fast from their actions. This is were a data driven approach marries automation. By building in measurable feedback from the start and automating as much as sensible both your development and your operations, your pace of change increased. That's what I call <em>agility</em>.
+                My approach addresses each of these three aspects: people, processes and technology. I focus on improving your way of working by making the feedback loop for innovation as short as possible. Your organisation's transformation accelerates only when your people learn fast from their actions. This is were a data driven approach marries automation. By building in measurable feedback from the start and automating as much as sensible both your development and your operations, your pace of change increased. That's what I call <em>agility</em>.
             </p>
         </div>
     </div>
@@ -43,7 +43,7 @@ description:  "Accelerate your digital transformation"
         </div>
         <div class="col-md-6">
             <h3 id="about">Rough consensus and running code</h3>
-            <p>You might wondering what the name of my company is referencing to. I started working as Software Engineer in 1997 for Unisource Business Networks, a joint venture by Swiss Telecom, Telia Sweden and KPN. We built and operated international data networks and I joint the newly founded Internet division. The way of working in our department deviated radically from the practices in the other networking divisions of KPN. As an example, where ISDN was completely drafted by the CCITT before the implementation, the Internet isn't centrally governed. The standards are developed in working groups of the Internet Engineering Task Force (IETF). Within a working group, progress is made by establishing <a href="https://tools.ietf.org/html/rfc2418#page-10" target="_blank">rough consensus</a> and finding proof in the working software. These principles adhere remarkably to the princples defined in the <a href="https://agilemanifesto.org/" target="_blank">agile manifesto</a>.
+            <p>You might wonder what the name of my company is referencing to. I started working as Software Engineer in 1997 for Unisource Business Networks, a joint venture by Swiss Telecom, Telia Sweden and KPN. We built and operated international data networks and I joint the newly founded Internet division. The way of working in our department deviated radically from the practices in the other networking divisions of KPN. As an example, where ISDN was completely drafted by the CCITT before the implementation, the Internet isn't centrally governed. The standards are developed in working groups of the Internet Engineering Task Force (IETF). Within a working group, progress is made by establishing <a href="https://tools.ietf.org/html/rfc2418#page-10" target="_blank">rough consensus</a> and finding proof in the working software. These principles adhere remarkably to those defined in the <a href="https://agilemanifesto.org/" target="_blank">agile manifesto</a>.
             </p>
         </div>
         <div class="col-md-3">
@@ -66,7 +66,7 @@ description:  "Accelerate your digital transformation"
                         <img src="/img/michiel_fokke_xs.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                         <h4>Michiel Fokke</h4>
                         <p class="category text-primary">Owner</p>
-                        <p class="description">A Delft University alumni with over 20 years experience in leading technology and product management roles in the Telecommunications and Utilities industry.
+                        <p class="description">A Delft University of Technology alumni with over 20 years experience in leading technology and product management roles in the Telecommunications and Utilities industry.
                         The last three and a half years, I have been CTO of Quby, the company behind Eneco's smart thermostat Toon and IoT platform. Recently, I started my own consultancy practice. I am available as interim CTO, Enterprise Architect or Product Owner.</p>
                         <a href="https://www.linkedin.com/in/michielfokke/" class="btn btn-primary btn-icon btn-round" target="_blank"> <i class="fa fa-linkedin"></i></a><a href="https://twitter.com/twoxey" class="btn btn-primary btn-icon btn-round" target="_blank"> <i class="fa fa-twitter"></i></a>
                     </div>
@@ -84,6 +84,8 @@ description:  "Accelerate your digital transformation"
         <div class="row">
             <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
                 <form action="https://formspree.io/michiel@roughconsensus.nl" method="POST">
+                    <input type="hidden" name="_next" value="{{< absURL "/thank_you/" >}}"/>
+                    <input type="text" name="_gotcha" style="display:none" />
                     <div class="input-group input-lg">
                         <span class="input-group-addon">
                             <i class="now-ui-icons users_circle-08"></i>

@@ -1,4 +1,4 @@
-baseURL = "https://roughconsensus.github.io/"
+baseURL = "https://roughconsensus.nl/"
 languageCode = "en-us"
 title = "Rough Consensus"
 theme = "hugo-now-ui"
@@ -22,31 +22,43 @@ post = "/:year/:month/:day/:slug/"
     pre = "<i class='now-ui-icons users_single-02'></i>"
     weight = 3
 [[menu.main]]
-    name = "About"
+    name = "About the name"
     url = "/#about"
     pre = "<i class='now-ui-icons travel_info'></i>"
-    weight = 3
+    weight = 4
 [[menu.main]]
     name = "Can I help you?"
     url = "/#can-i-help-you"
     pre = "<i class='now-ui-icons ui-1_email-85'></i>"
-    weight = 4
+    weight = 5
 
 [[menu.footer]]
-    identifier = "twitter"
-    name = "twoxey"
-    pre = "<i class='fa fa-twitter'></i>"
-    url = "https://twitter.com/twoxey"
+    identifier = "phone"
+    name = "+31 646 337 993"
+    pre = "<i class='now-ui-icons tech_mobile'></i>"
+    url = "/phone/"
     weight = 1
+[[menu.footer]]
+    identifier = "email"
+    name = "michiel@roughconsensus.nl"
+    pre = "<i class='now-ui-icons ui-1_email-85'></i>"
+    url = "mailto:michiel@roughconsensus.nl"
+    weight = 2
+[[menu.footer]]
+    identifier = "kvk"
+    name = "KVK 67149596"
+    pre = "<i class='fa fa-briefcase'></i>"
+    url = "https://www.kvk.nl/zoeken/?q=67149596"
+    weight = 3
 [[menu.footer]]
     identifier = "copyright"
     name = "CC BY-NC-ND 4.0"
     pre = "<i class='fa fa-balance-scale'></i>"
     url = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
-    weight = 2
+    weight = 4
 
 [params]
-    background = "/img/rotterdam.jpg"
+    background = "/img/header.jpg"
     logo = "/img/logo.png"
     tint = "green"
     custom_css = ['/css/custom.css']

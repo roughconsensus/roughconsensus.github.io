@@ -25,6 +25,7 @@ description:  "Accelerate your digital transformation"
             <!-- First image on the right side, above the article -->
             <div class="image-container image-right" style="background-image: url('/img/office-1.jpg')"></div>
             <h3 id="how-i-work">How I work</h3>
+            <p><em>A holistic approach for people, processes and technology.</em></p>
             <p>
                 The digital transformation is accelerating the pace of change in an ever growing range of businesses. This poses enormous opportunities to grow your business. Going digital native can lower your costs by an order of magnitude or open up markets that were out of reach using more traditional go-to-market approaches. However, when you can't keep up with change, it can also become a challenge or an outright threat to your survival. At present, transformation towards a digital native business is not optional anymore, but a necessity.
             </p>
@@ -32,7 +33,7 @@ description:  "Accelerate your digital transformation"
                 A successful transformation does not solely depend on the selection and implementation of the right technology. Much more important is the adaptation of your business processes and the shift in mindset of your staff.
             </p>
             <p>
-                My approach addresses each of these three aspects: people, processes and technology. I focus on improving your way of working by making the feedback loop for innovation as short as possible. Your organisation's transformation accelerates only when your people learn fast from their actions. This is were a data driven approach marries automation. By building in measurable feedback from the start and automating as much as sensible both your development and your operations, your pace of change increased. That's what I call <em>agility</em>.
+                My approach addresses each of these three aspects: people, processes and technology. I focus on improving your way of working by making the feedback loop for innovation as short as possible. Your organisation's transformation accelerates only when your people learn fast from their actions. This is were a data driven approach marries automation. By including measurable feedback from the start and automating as much as sensible, for both development and operations, your pace of change increases. That's what I call <em>agility</em>.
             </p>
         </div>
     </div>

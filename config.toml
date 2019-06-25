@@ -2,6 +2,7 @@ baseURL = "https://roughconsensus.nl/"
 languageCode = "en-us"
 title = "Rough Consensus"
 theme = "hugo-now-ui"
+googleAnalytics = "UA-7840077-4"
 
 [permalinks]
 post = "/:year/:month/:day/:slug/"

@@ -12,3 +12,12 @@ a, a:hover { color: #42a0a0; }
         display: none;
     }
 }
+
+/* custom Cookie Consent CSS */
+.cc-message, .cc-btn {
+	font-family: montserrat, helvetica neue, Arial, sans-serif;
+}
+
+a.cc-btn.cc-dismiss {
+	border-radius: 30px;
+}

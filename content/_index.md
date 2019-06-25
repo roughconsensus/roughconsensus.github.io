@@ -69,7 +69,7 @@ description:  "Accelerate your digital transformation"
                         <p class="category text-primary">Owner</p>
                         <p class="description">A Delft University of Technology alumnus with over 20 years experience in leading technology and product management roles in the Telecommunications and Utilities industry.
                         The last three and a half years, I have been CTO of Quby, the company behind Eneco's smart thermostat Toon and IoT platform. Recently, I started my own consultancy practice. I am available as interim CTO, Enterprise Architect or Product Owner.</p>
-                        <a href="https://www.linkedin.com/in/michielfokke/" class="btn btn-primary btn-icon btn-round" target="_blank"> <i class="fa fa-linkedin"></i></a><a href="https://twitter.com/twoxey" class="btn btn-primary btn-icon btn-round" target="_blank"> <i class="fa fa-twitter"></i></a>
+                        <a href="/linkedin/" class="btn btn-primary btn-icon btn-round" target="_blank"> <i class="fa fa-linkedin"></i></a><a href="/twitter/" class="btn btn-primary btn-icon btn-round" target="_blank"> <i class="fa fa-twitter"></i></a>
                     </div>
                 </div>
                 <div class="col-md-3"></div>

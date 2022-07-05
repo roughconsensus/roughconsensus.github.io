@@ -1,0 +1,50 @@
+# This workflow will run hugo and install the generated pages as Github
+# Pages site.
+
+name: Hugo Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ "hugo-src" ]
+  pull_request:
+    branches: [ "hugo-src" ]
+
+ # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    permissions:
+      contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.101.0'
+
+      - name: Build
+        run: |
+          hugo version
+          hugo --minify
+          echo '[![build status](https://github.com/roughconsensus/roughconsensus.github.io/actions/workflows/hugo-deploy.yml/badge.svg?branch=hugo-src)](https://github.com/roughconsensus/roughconsensus.github.io/actions/workflows/hugo-deploy.yml)' > public/README.md
+          echo '# [roughconsensus.nl](http://roughconsensus.nl)' >> public/README.md
+          echo 'Static files for my website built with [Hugo](https://gohugo.io).' >> public/README.md
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/hugo-src' }}
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: master
+          publish_dir: ./public
+          cname: roughconsensus.nl
+
+

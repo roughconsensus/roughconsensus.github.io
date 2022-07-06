@@ -4,6 +4,9 @@ title = "Rough Consensus"
 theme = "hugo-now-ui"
 googleAnalytics = "UA-7840077-4"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 [permalinks]
 post = "/:year/:month/:day/:slug/"
 

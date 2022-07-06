@@ -1,3 +1,3 @@
-[![build status](https://github.com/roughconsensus/roughconsensus.github.io/actions/workflows/hugo-deploy.yml/badge.svg?branch=hugo-src)](https://github.com/roughconsensus/roughconsensus.github.io/actions/workflows/hugo-deploy.yml)
-# [roughconsensus.nl](http://roughconsensus.nl)
-Static files for my website built with [Hugo](https://gohugo.io).
+[![build status](https://travis-ci.org/roughconsensus/roughconsensus.github.io.svg?branch=hugo-src)](https://travis-ci.org/roughconsensus/roughconsensus.github.io)
+# [roughconsensus.nl](https://roughconsensus.nl)
+Static files for my website built with [Hugo](https://gohugo.io)
